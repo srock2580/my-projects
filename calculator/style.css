@@ -16,7 +16,7 @@ div {box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; border-radius: 5px;}
   margin: auto;
   margin-top: 20px;
   padding: 30px;
-  background-color: white;
+  background-color: lavender;
 }
 
 .ans-sec {
@@ -29,6 +29,8 @@ div {box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; border-radius: 5px;}
   margin-bottom: 20px;
   font-size: x-large;
   letter-spacing: 1px;
+  background-color: white;
+  overflow: auto;
 }
 
 .key-sec {
@@ -45,14 +47,17 @@ div {box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; border-radius: 5px;}
   height: 70px;
   font-weight: bold;
   cursor: pointer;
+  background-color: white;
 }
 
-.black {
+#black {
   background-color: black;
   color: white;
 }
 
-.red {
+#red {
   background-color: red;
   color: white;
 }
+
+#lavender {background-color: lavender;}
