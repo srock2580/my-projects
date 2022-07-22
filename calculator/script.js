@@ -10,7 +10,7 @@ keyArr.forEach(element => {
             let ans = eval(ansBag);
             document.querySelector('.ans-sec').innerText = ans;
             ansBag = '';
-        } else if (key === 'C') {
+        } else if (key === 'CA') {
             ansBag = '';
             document.querySelector('.ans-sec').innerText = ansBag;
         } else {
