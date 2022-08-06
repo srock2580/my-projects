@@ -11,7 +11,62 @@
 
 <body>
 
-  <p class="demo">hello world</p>
+  <!-- top budget section -->
+  <div class="top-section">
+    <h2>Budget of March 2022</h2>
+    <h1>5000.00</h1>
+
+    <!-- income section -->
+    <div class="inc-section">
+      <div class="inc-title">INCOME</div>
+      <div class="inc-amount">+ 15000.00</div>
+    </div>
+
+    <!-- expense section -->
+    <div class="exp-section">
+      <div class="exp-title">EXPENSE</div>
+      <div class="exp-amount">- 10000.00</div>
+      <div class="exp-percentage">17%</div>
+    </div>
+  </div>
+
+  <!-- mid form section -->
+  <div class="mid-section">
+    <form>
+      <select class="type">
+        <option value="inc">+</option>
+        <option value="exp">-</option>
+      </select>
+      <input type="text" class="desc" name="">
+      <input type="number" class="amount" name="">
+      <button type="submit">Enter</button>
+    </form>
+  </div>
+
+  <!-- bottom item section -->
+  <div class="bottom-section">
+    <!-- bottom income section -->
+    <div class="bottom-inc-section">
+      <div class="item-section">
+        <div class="item">
+          <div class="item-title">test</div>
+          <div class="item-amount">+ 1000.00</div>
+        </div>
+        <div class="minus-button-section"><button class="minus-button">x</button></div>
+      </div>
+    </div>
+
+    <!-- bottom expense section -->
+    <div class="bottom-exp-section">
+      <div class="item-section">
+        <div class="item">
+          <div class="item-title">test</div>
+          <div class="item-amount">+ 1000.00</div>
+        </div>
+        <div class="minus-button-section"><button class="minus-button">x</button></div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
