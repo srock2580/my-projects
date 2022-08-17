@@ -170,8 +170,16 @@ input,
   color: var(--inc-color);
 }
 
+.inc-item > div > p::before {
+  content: '+ ';
+}
+
 .exp-item > div > p {
   color: var(--exp-color);
+}
+
+.exp-item > div > p::before {
+  content: '- ';
 }
 
 .inc-item > button,
