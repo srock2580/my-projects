@@ -9,3 +9,35 @@ body {
   color: black;
   background-color: #9900ff;
 }
+
+.login {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0px;
+}
+
+.login > div > p {
+  color: white;
+  font-weight: bold;
+}
+
+.login input {
+  border: none;
+  border-radius: 2px;
+  padding: 5px 10px;
+  outline: none;
+  width: 100px;
+}
+
+.login button {
+  border: none;
+  border-radius: 10px;
+  padding: 5px 20px;
+  outline: none;
+  cursor: pointer;
+  background-color: lavender;
+}
+
+.login button:hover {
+  background-color: white;
+}

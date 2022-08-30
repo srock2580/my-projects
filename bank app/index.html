@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <!-- //////// login ////////// -->
+    <form class="login">
+      <div><p>Login to your accout</p></div>
+      <div>
+        <input type="text" />
+        <input type="password" />
+        <button>Login</button>
+      </div>
+    </form>
 
-<body>
+    <!-- ///////// current balance /////////// -->
+    <div class="current-balance">
+      <div></div>
+      <div></div>
+    </div>
 
-  <p class="demo">hello world</p>
+    <!-- /////////// main chart ///////// -->
+    <div class="main-chart">
+      <div class="balance-chart"></div>
+      <div class="trans-chart"></div>
+    </div>
 
-  <script src="script.js"></script>
-</body>
+    <!-- ///////// bottom balance ////////// -->
+    <div class="bottom-balance"></div>
 
+    <script src="script.js"></script>
+  </body>
 </html>
