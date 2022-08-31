@@ -13,26 +13,83 @@
     <form class="login">
       <div><p>Login to your accout</p></div>
       <div>
-        <input type="text" />
-        <input type="password" />
+        <input type="text" placeholder="User Id" />
+        <input type="password" placeholder="Password" />
         <button>Login</button>
       </div>
     </form>
 
     <!-- ///////// current balance /////////// -->
     <div class="current-balance">
-      <div></div>
-      <div></div>
+      <div>
+        <h2>Current Balance</h2>
+        <p>10:10 am, 01 January 2022</p>
+      </div>
+
+      <div>
+        <h1>8000.00</h1>
+      </div>
     </div>
 
     <!-- /////////// main chart ///////// -->
     <div class="main-chart">
-      <div class="balance-chart"></div>
-      <div class="trans-chart"></div>
+      <div class="balance-chart">
+        <div>
+          <p>1.</p>
+          <p class="deposit">DEPOSIT</p>
+          <p>01/01/2022</p>
+          <h3>+ 5000.00</h3>
+        </div>
+        <div>
+          <p>2.</p>
+          <p class="withdraw">WITHDRAW</p>
+          <p>01/01/2022</p>
+          <h3>- 3000.00</h3>
+        </div>
+      </div>
+
+      <div class="trans-chart">
+        <!-- transfer -->
+        <div class="transfer">
+          <form action="">
+            <h3>Transfer Amount</h3>
+            <input type="text" placeholder="Transfer to" id="transfer-to">
+            <input type="number" placeholder="Amount" id="transfer-amount"><br>
+            <button type="submit">Transfer</button>
+          </form>
+        </div>
+
+        <!-- loan -->
+        <div class="loan">
+          <form action="">
+            <h3>Request Loan</h3>
+            <input type="number" placeholder="Amount" id="loan-amount">
+            <button type="submit">Get Loan</button>
+          </form>
+        </div>
+
+        <!-- close -->
+        <div class="close">
+          <form action="">
+            <h3>Close Account</h3>
+            <input type="text" placeholder="User Id" id="close-id">
+            <input type="number" placeholder="Password" id="close-password"><br>
+            <button type="submit">Close</button>
+          </form>
+        </div>
+      </div>
     </div>
 
-    <!-- ///////// bottom balance ////////// -->
-    <div class="bottom-balance"></div>
+    <!-- ///////// bottom info ////////// -->
+    <div class="bottom-info">
+      <div class="left">
+        
+      </div>
+
+      <div class="right">
+
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>

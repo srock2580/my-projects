@@ -10,23 +10,28 @@ body {
   background-color: #9900ff;
 }
 
+/* //////// login ////////// */
+
 .login {
+  width: 90%;
+  margin: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 20px 0px;
 }
 
 .login > div > p {
-  color: white;
+  color: lavender;
   font-weight: bold;
 }
 
 .login input {
   border: none;
   border-radius: 2px;
-  padding: 5px 10px;
+  padding: 5px;
   outline: none;
   width: 100px;
+  text-align: center;
 }
 
 .login button {
@@ -40,4 +45,128 @@ body {
 
 .login button:hover {
   background-color: white;
+}
+
+/* ///////// current balance /////////// */
+
+.current-balance {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: lavender;
+  margin-bottom: 10px;
+}
+
+.current-balance > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+
+.current-balance p {
+  font-size: small;
+}
+
+/* /////////// main chart ///////// */
+
+.main-chart {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.balance-chart {
+  width: 63%;
+  background-color: lavender;
+  height: 412px;
+  overflow: auto;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.balance-chart > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  border-top: 1px solid rgb(193, 193, 248);
+}
+
+.balance-chart > div:nth-child(1) {
+  border: none;
+}
+
+.balance-chart > div > p {
+  font-size: small;
+}
+
+.balance-chart > div > h3 {
+  font-weight: normal;
+}
+
+.deposit {
+  font-size: x-small!important;
+  background-color: rgb(61, 61, 255);
+  color: white;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.withdraw {
+  font-size: x-small!important;
+  background-color: rgb(255, 50, 50);
+  color: white;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.trans-chart {
+  width: 35%;
+}
+
+.transfer, .loan, .close {
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  color: white
+}
+
+.transfer input, .loan input, .close input {
+  width: 100px;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+  margin: 10px 0px;
+  outline: none;
+}
+
+.trans-chart button {
+  padding: 5px;
+  width: 100px;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: lavender;
+}
+
+.trans-chart button:hover {
+  background-color: white;
+}
+
+.transfer {
+  background-color: rgb(43, 138, 43);
+}
+
+.loan {
+  background-color: rgb(228, 175, 77);
+  margin: 20px 0px;
+  color: black;
+}
+
+.close {
+  background-color: rgb(243, 66, 66);
 }
