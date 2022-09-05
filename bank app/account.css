@@ -10,73 +10,38 @@ body {
   background-color: #9900ff;
 }
 
-/* //////// login ////////// */
-
-.login {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0px;
-}
-
-.login > div > p {
-  color: lavender;
-  font-weight: bold;
-}
-
-.login input {
-  border: none;
-  border-radius: 2px;
-  padding: 5px;
-  outline: none;
-  width: 100px;
-  text-align: center;
-}
-
-.login button {
-  border: none;
-  border-radius: 10px;
-  padding: 5px 20px;
-  outline: none;
-  cursor: pointer;
-  background-color: lavender;
-}
-
-.login button:hover {
-  background-color: white;
-}
-
 /* ///////// current balance /////////// */
 
-.current-balance {
+#currentBalance {
   width: 70%;
   margin: auto;
   display: flex;
   justify-content: space-between;
   color: lavender;
+  margin-top: 50px;
   margin-bottom: 10px;
 }
 
-.current-balance > div:nth-child(2) {
+#currentBalance > div:nth-child(2) {
   display: flex;
   align-items: center;
 }
 
-.current-balance p {
+#currentBalance p {
   font-size: small;
 }
 
 /* /////////// main chart ///////// */
 
-.main-chart {
+#mainChart {
   width: 70%;
   margin: auto;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
-.balance-chart {
+#balanceChart {
   width: 63%;
   background-color: lavender;
   height: 412px;
@@ -85,7 +50,7 @@ body {
   border-radius: 5px;
 }
 
-.balance-chart > div {
+#balanceChart > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -93,46 +58,50 @@ body {
   border-top: 1px solid rgb(193, 193, 248);
 }
 
-.balance-chart > div:nth-child(1) {
+#balanceChart > div:nth-child(1) {
   border: none;
 }
 
-.balance-chart > div > p {
+#balanceChart > div > p {
   font-size: small;
 }
 
-.balance-chart > div > h3 {
+#balanceChart > div > h3 {
   font-weight: normal;
 }
 
-.deposit {
-  font-size: x-small!important;
+#deposit {
+  font-size: x-small !important;
   background-color: rgb(61, 61, 255);
   color: white;
   padding: 2px;
   border-radius: 5px;
 }
 
-.withdraw {
-  font-size: x-small!important;
+#withdraw {
+  font-size: x-small !important;
   background-color: rgb(255, 50, 50);
   color: white;
   padding: 2px;
   border-radius: 5px;
 }
 
-.trans-chart {
+#transChart {
   width: 35%;
 }
 
-.transfer, .loan, .close {
+#transferForm,
+#loanForm,
+#closeForm {
   width: 100%;
   padding: 20px;
   border-radius: 5px;
-  color: white
+  color: white;
 }
 
-.transfer input, .loan input, .close input {
+#transferForm input,
+#loanForm input,
+#closeForm input {
   width: 100px;
   padding: 5px;
   border-radius: 3px;
@@ -142,7 +111,7 @@ body {
   outline: none;
 }
 
-.trans-chart button {
+#transChart button {
   padding: 5px;
   width: 100px;
   border-radius: 3px;
@@ -153,20 +122,67 @@ body {
   background-color: lavender;
 }
 
-.trans-chart button:hover {
+#transChart button:hover {
   background-color: white;
 }
 
-.transfer {
+#transferForm {
   background-color: rgb(43, 138, 43);
 }
 
-.loan {
+#loanForm {
   background-color: rgb(228, 175, 77);
   margin: 20px 0px;
   color: black;
 }
 
-.close {
+#closeForm {
   background-color: rgb(243, 66, 66);
+}
+
+/* ///////// bottom info ////////// */
+
+#bottomInfo {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: lavender;
+  margin-bottom: 20px;
+}
+
+#left {
+  width: 63%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+#in {
+  color: rgb(26, 180, 26);
+}
+
+#out {
+  color: rgb(202, 202, 62);
+}
+
+#interest {
+  color: rgb(255, 140, 74);
+}
+
+#sort {
+  padding: 2px 5px;
+  cursor: pointer;
+  background-color: lavender;
+  border: none;
+  border-radius: 2px;
+}
+
+#right {
+  width: 35%;
+  text-align: right;
+}
+
+#right span {
+  font-weight: bold;
 }

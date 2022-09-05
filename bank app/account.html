@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account</title>
+    <link rel="stylesheet" href="account.css" />
+  </head>
+
+  <body>
+    <!-- ///////// current balance /////////// -->
+    <div id="currentBalance">
+      <div>
+        <h2>Current Balance</h2>
+        <p id="currentTime">10:10 am, 01 January 2022</p>
+      </div>
+
+      <div>
+        <h1>0.00</h1>
+      </div>
+    </div>
+
+    <!-- /////////// main chart ///////// -->
+    <div id="mainChart">
+      <div id="balanceChart">
+        <!-- <div>
+          <p>1.</p>
+          <p id="deposit">DEPOSIT</p>
+          <p>01/01/2022</p>
+          <h3>+ 5000.00</h3>
+        </div>
+        <div>
+          <p>2.</p>
+          <p id="withdraw">WITHDRAW</p>
+          <p>01/01/2022</p>
+          <h3>- 3000.00</h3>
+        </div> -->
+      </div>
+
+      <div id="transChart">
+        <!-- transfer -->
+        <form id="transferForm" action="">
+          <h3>Transfer Amount</h3>
+          <input type="text" placeholder="Transfer to" id="transferTo" />
+          <input type="number" placeholder="Amount" id="transferAmount" /><br />
+          <button type="submit" id="transferButton">Transfer</button>
+        </form>
+
+        <!-- loan -->
+        <form id="loanForm" action="">
+          <h3>Request Loan</h3>
+          <input type="number" placeholder="Amount" id="loanAmount" />
+          <button type="submit" id="loanButton">Get Loan</button>
+        </form>
+
+        <!-- close -->
+        <form id="closeForm" action="">
+          <h3>Close Account</h3>
+          <input type="text" placeholder="User Id" id="closeId" />
+          <input
+            type="number"
+            placeholder="Password"
+            id="closePassword"
+          /><br />
+          <button type="submit" id="closeButton">Close</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- ///////// bottom info ////////// -->
+    <div id="bottomInfo">
+      <div id="left">
+        <p id="in"></p>
+        <p id="out"></p>
+        <p id="interest"></p>
+        <div><button id="sort">Sort ↑↓</button></div>
+      </div>
+
+      <div id="right">
+        <p>Closing at <span>10:00</span></p>
+      </div>
+    </div>
+
+    <script src="account.js"></script>
+  </body>
+</html>

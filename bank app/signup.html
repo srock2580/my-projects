@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <!-- //////// signup ////////// -->
+    <form id="signupForm">
+      <div>
+        <p>Create your accout</p>
+        <p id="loginLink">Already have an account, <a href="index.html">Login</a></p>
+      </div>
+      <div>
+        <input type="text" placeholder="Name" id="name" required /><br />
+        <input type="email" placeholder="Email Id" id="email" required /><br />
+        <p>
+          <span id="showPassword">Show password</span
+          ><img
+            src="https://cdn4.iconfinder.com/data/icons/interface-line-14/32/unhide-128.png"
+            alt=""
+          />
+        </p>
+        <!-- https://cdn4.iconfinder.com/data/icons/interface-line-14/32/hide-128.png -->
+        <input
+          type="password"
+          placeholder="New Password"
+          id="password"
+          required
+        /><br />
+        <input
+          type="password"
+          placeholder="Confirm Password"
+          id="confirm"
+          required
+        /><br />
+        <p id="passwordEror">Password is not matching</p>
+        <button id="signupButton" type="submit">Create Account</button>
+      </div>
+    </form>
+
+    <script src="signup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  background-color: #9900ff;
+}
+
+#signupForm {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+#signupForm > div:nth-child(1) {
+  width: 60%;
+  color: lavender;
+}
+
+#signupForm > div:nth-child(1) > p:nth-child(1) {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#loginLink {
+  font-size: small;
+}
+
+#loginLink a {
+  color: rgb(0, 183, 255);
+}
+
+#signupForm > div:nth-child(2) {
+  width: 40%;
+  background-color: lavender;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#signupForm input {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px 10px;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+#signupForm Button {
+  width: 100%;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  color: white;
+}
+
+#signupForm button:hover {
+  background-color: lavender;
+  color: black;
+}
+
+#signupForm > div:nth-child(2) > p {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+#signupForm > div:nth-child(2) > p > span {
+  font-size: small;
+}
+
+#signupForm > div:nth-child(2) > p > img{
+  width: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#passwordEror {
+  font-size: small;
+  margin-top: -8px;
+  margin-bottom: 5px;
+  color: red;
+  visibility: hidden;
+}
