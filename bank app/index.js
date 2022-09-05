@@ -1,4 +1,5 @@
 let data = JSON.parse(localStorage.getItem("data")) || []
+let currentName = ''
 let currentEmail = ''
 
 document
@@ -19,6 +20,7 @@ function login() {
   for (let i = 0; i < data.length; i++) {
     if (loginId === data[i].email && password === data[i].password) {
       check = true;
+      currentName = data[i].name
       currentEmail = data[i].email
       break
     }
@@ -26,6 +28,7 @@ function login() {
 
   if (check) {
     window.location.href = "account.html"
+    localStorage.setItem("currentName", currentName)
     localStorage.setItem("currentEmail", currentEmail)
   } else document.querySelector("#loginEror").style.visibility = "visible"
 }

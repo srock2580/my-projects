@@ -10,6 +10,16 @@ body {
   background-color: #9900ff;
 }
 
+/* /////////// welcome /////////////// */
+#welcome {
+  margin: auto;
+  color: lavender;
+  text-align: center;
+  margin-top: 10px;
+  border-bottom: 1px solid lavender;
+  width: 300px;
+}
+
 /* ///////// current balance /////////// */
 
 #currentBalance {
@@ -18,7 +28,7 @@ body {
   display: flex;
   justify-content: space-between;
   color: lavender;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
