@@ -10,77 +10,79 @@
 
   <body>
     <!-- /////////// welcome /////////////// -->
-    <h3 id="welcome">welcome</h3>
+    <h3 class="welcome">welcome</h3>
     <!-- ///////// current balance /////////// -->
-    <div id="currentBalance">
+    <div class="currentBalance">
       <div>
         <h2>Current Balance</h2>
-        <p id="currentTime">10:10 am, 01 January 2022</p>
+        <p class="currentTime">10:10 am, 01 January 2022</p>
       </div>
 
       <div>
-        <h1>0.00</h1>
+        <h1 class="mainBalance">0.00</h1>
       </div>
     </div>
 
     <!-- /////////// main chart ///////// -->
-    <div id="mainChart">
-      <div id="balanceChart">
+    <div class="mainChart">
+      <div class="balanceChart">
         <!-- <div>
           <p>1.</p>
-          <p id="deposit">DEPOSIT</p>
+          <p class="deposit">DEPOSIT</p>
           <p>01/01/2022</p>
           <h3>+ 5000.00</h3>
         </div>
         <div>
           <p>2.</p>
-          <p id="withdraw">WITHDRAW</p>
+          <p class="withdraw">WITHDRAW</p>
           <p>01/01/2022</p>
           <h3>- 3000.00</h3>
         </div> -->
       </div>
 
-      <div id="transChart">
+      <div class="transChart">
         <!-- transfer -->
-        <form id="transferForm" action="">
+        <form class="transferForm" action="">
           <h3>Transfer Amount</h3>
           <input type="email" placeholder="Email to" id="transferTo" />
           <input type="number" placeholder="Amount" id="transferAmount" /><br />
-          <button type="submit" id="transferButton">Transfer</button>
+          <button type="submit" class="transferButton">Transfer</button>
+          <p class="transferEror">Account does not exist</p>
         </form>
 
         <!-- loan -->
-        <form id="loanForm" action="">
+        <form class="loanForm" action="">
           <h3>Request Loan</h3>
           <input type="number" placeholder="Amount" id="loanAmount" />
-          <button type="submit" id="loanButton">Get Loan</button>
+          <button type="submit" class="loanButton">Get Loan</button>
         </form>
 
         <!-- close -->
-        <form id="closeForm" action="">
+        <form class="closeForm" action="">
           <h3>Close Account</h3>
-          <input type="text" placeholder="User Id" id="closeId" />
+          <input type="email" placeholder="User id" id="closeId" />
           <input
             type="number"
             placeholder="Password"
             id="closePassword"
           /><br />
-          <button type="submit" id="closeButton">Close</button>
+          <button type="submit" class="closeButton">Close</button>
+          <p class="closeEror">Wrong email or password</p>
         </form>
       </div>
     </div>
 
     <!-- ///////// bottom info ////////// -->
-    <div id="bottomInfo">
-      <div id="left">
-        <p id="in"></p>
-        <p id="out"></p>
-        <p id="interest"></p>
-        <div><button id="sort">Sort ↑↓</button></div>
+    <div class="bottomInfo">
+      <div class="left">
+        <p class="in"></p>
+        <p class="out"></p>
+        <p class="interest"></p>
+        <div><button class="sort">Sort ↑↓</button></div>
       </div>
 
-      <div id="right">
-        <p>Closing at <span>10:00</span></p>
+      <div class="right">
+        <p>Closing at <span class="closingTime">10:00</span></p>
       </div>
     </div>
 

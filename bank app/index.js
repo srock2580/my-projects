@@ -3,14 +3,14 @@ let currentName = ''
 let currentEmail = ''
 
 document
-  .querySelector("#loginForm")
+  .querySelector(".loginForm")
   .addEventListener("submit", function (event) {
     event.preventDefault()
     login()
   });
 
 function login() {
-  let form = document.querySelector("#loginForm")
+  let form = document.querySelector(".loginForm")
 
   let loginId = form.loginId.value
   let password = form.password.value
@@ -30,5 +30,5 @@ function login() {
     window.location.href = "account.html"
     localStorage.setItem("currentName", currentName)
     localStorage.setItem("currentEmail", currentEmail)
-  } else document.querySelector("#loginEror").style.visibility = "visible"
+  } else document.querySelector(".loginEror").style.visibility = "visible"
 }

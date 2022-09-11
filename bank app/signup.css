@@ -10,85 +10,81 @@ body {
   background-color: #9900ff;
 }
 
-#signupForm {
-  width: 50%;
-  margin: auto;
+.container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 20px 0px;
 }
 
-#signupForm > div:nth-child(1) {
-  width: 60%;
+.signupForm {
+  width: 200px;
+  padding: 20px;
+  background-color: lavender;
+  border-radius: 2px;
+}
+
+.container > div > h3 {
   color: lavender;
+  margin-bottom: 10px;
 }
 
-#signupForm > div:nth-child(1) > p:nth-child(1) {
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-#loginLink {
+.container > div > p {
+  color: lavender;
   font-size: small;
 }
 
-#loginLink a {
+.container > div > p > a {
   color: rgb(0, 183, 255);
 }
 
-#signupForm > div:nth-child(2) {
-  width: 40%;
-  background-color: lavender;
-  padding: 20px;
-  border-radius: 5px;
-}
-
-#signupForm input {
+.signupForm input {
   width: 100%;
   border: 1px solid gray;
-  border-radius: 5px;
+  border-radius: 2px;
   padding: 5px 10px;
   outline: none;
   margin-bottom: 10px;
 }
 
-#signupForm Button {
-  width: 100%;
+.signupForm input[type="submit"] {
   border: 1px solid black;
   background-color: black;
-  border-radius: 5px;
-  padding: 5px;
+  border-radius: 2px;
   font-weight: bold;
-  outline: none;
   cursor: pointer;
   color: white;
 }
 
-#signupForm button:hover {
+.signupForm input[type="submit"]:hover {
   background-color: lavender;
   color: black;
 }
 
-#signupForm > div:nth-child(2) > p {
+.showPassword {
   display: flex;
-  align-items: center;
   justify-content: right;
+  align-items: center;
 }
 
-#signupForm > div:nth-child(2) > p > span {
-  font-size: small;
-}
-
-#signupForm > div:nth-child(2) > p > img{
+.showPassword > img {
   width: 20px;
-  margin-left: 10px;
   cursor: pointer;
 }
 
-#passwordEror {
+.showPassword > span {
+  font-size: small;
+  margin-right: 5px;
+}
+
+.passwordEror {
   font-size: small;
   margin-top: -8px;
   margin-bottom: 5px;
   color: red;
+  text-align: right;
   visibility: hidden;
+}
+
+.hiding {
+  display: none;
 }
