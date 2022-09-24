@@ -15,20 +15,27 @@
 
     <div class="container">
       <div class="weather-sec">
-        <h1 class="cityName">City</h1>
-        <div class="skyAndTemp">
-          <img src="https://cdn1.iconfinder.com/data/icons/weather-471/128/SUN-128.png" alt="">
-          <h1>0° C</h1>
+        <div>
+          <h1 class="cityName">City</h1>
+          <div class="skyAndTemp">
+            <img
+              src="https://cdn1.iconfinder.com/data/icons/weather-471/128/SUN-128.png"
+              alt=""
+            />
+            <h1>0° C</h1>
+          </div>
+          <div class="minAndMax">
+            <h4 class="min">Min Temp: 0° C</h4>
+            <h4 class="max">Max Temp: 0° C</h4>
+            <h4 class="wind">Wind Speed: 0 m/s</h4>
+          </div>
         </div>
-        <div class="minAndMax">
-          <h4 class="min">Min Temp: 0° C</h4>
-          <h4 class="max">Max Temp: 0° C</h4>
-          <h4 class="wind">Wind Speed: 0 m/s</h4>
-        </div>
+
+        <div class="forecast"></div>
       </div>
 
       <iframe
-        height="400"
+        height="500"
         id="gmap_canvas"
         src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
         frameborder="0"

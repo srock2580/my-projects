@@ -55,16 +55,16 @@ body {
 }
 
 .weather-sec {
-  width: 40%;
+  width: 50%;
   
 }
 
 iframe {
-  width: 60%;
+  width: 50%;
 }
 
 .cityName {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   color: gray;
   border-bottom: 2px solid gray;
   width: 50%;
@@ -73,7 +73,7 @@ iframe {
 .skyAndTemp {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .skyAndTemp > img {
@@ -88,4 +88,22 @@ iframe {
 .minAndMax > h4 {
   color: gray;
   margin-bottom: 10px;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+  margin-top: 25px;
+}
+
+.forecast > div {
+  width: 19%;
+  background-color: lavender;
+  padding: 10px;
+  text-align: center;
+}
+
+.forecast > div > img {
+  width: 100%
 }

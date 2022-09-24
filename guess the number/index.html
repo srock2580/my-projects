@@ -12,7 +12,23 @@
 <body>
 
   <div class="container">
-    
+    <h1 class="title">Guess The Number!</h1>
+    <hr>
+    <h2 class="ans">Start Guessing...</h2>
+    <div>
+      <form class="left-sec">
+        <input type="number" max="20" min="1" placeholder="1 - 20" id="input" required><br>
+        <input type="submit" id="submit">
+      </form>
+      <div class="right-sec">
+        <h4 class="score">Score: 20</h4>
+        <h4 class="highscore">Highscore: 0</h4>
+      </div>
+    </div>
+
+    <h1 class="currect">Ans: 5</h1>
+
+    <button class="new-game">New Game</button>
   </div>
 
   <script src="script.js"></script>
