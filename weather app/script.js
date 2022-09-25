@@ -9,6 +9,9 @@ const cloudIcon =
   "https://cdn3.iconfinder.com/data/icons/spring-2-1/30/Clouds-128.png";
 const clearIcon =
   "https://cdn1.iconfinder.com/data/icons/weather-471/128/SUN-128.png";
+
+const rainIcon = 'https://cdn3.iconfinder.com/data/icons/spring-2-1/30/Rain-128.png'
+
 const cityNamedom = document.querySelector(".cityName");
 const weatherImgDom = document.querySelector(".skyAndTemp > img");
 const tempDom = document.querySelector(".skyAndTemp > h1");
@@ -37,6 +40,7 @@ const appendData = (data, cityName) => {
   if (skyCon === "Clouds") weatherImgDom.src = cloudIcon;
   else if (skyCon === "Haze") weatherImgDom.src = hazeIcon;
   else if (skyCon === "Clear") weatherImgDom.src = clearIcon;
+  else if (skyCon === "Rain") weatherImgDom.src = rainIcon;
   tempDom.innerText = temp + "° C";
   minTempDom.innerText = "Min Temp: " + minTemp + "° C";
   maxTempDom.innerText = "Max Temp: " + maxTemp + "° C";
@@ -45,6 +49,7 @@ const appendData = (data, cityName) => {
 
 // append forecast
 const appendForecast = (data) => {
+  document.querySelector(".forecast").innerHTML = ''
   data.forEach((element, index) => {
     const div = document.createElement("div");
     const weekDay = document.createElement("h2");
@@ -56,6 +61,7 @@ const appendForecast = (data) => {
     if (element.weather[0].main === "Clouds") image.src = cloudIcon;
     else if (element.weather[0].main === "Haze") image.src = hazeIcon;
     else if (element.weather[0].main === "Clear") image.src = clearIcon;
+    else if (element.weather[0].main === "Rain") image.src = rainIcon;
     maxTemp.innerText = Math.floor(element.main.temp_max - 273.15) + "° C";
     minTemp.innerText = Math.floor(element.main.temp_min - 273.15) + "° C";
 
@@ -84,6 +90,7 @@ const fetchData = async (cityName) => {
     else {
       appendData(data, cityName);
       appendForecast(dataForecast.list);
+      console.log(dataForecast.list);
     }
 
     // console.log(dataForecast.list)
