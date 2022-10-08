@@ -10,6 +10,7 @@ let random = Math.floor(Math.random() * 20) + 1;
 let sc = 20;
 let hi = 0;
 
+// click on submit button
 document.querySelector("form").addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -52,6 +53,7 @@ document.querySelector("form").addEventListener("submit", (event) => {
   input.value = "";
 });
 
+// click on new game button
 document.querySelector('.new-game').addEventListener('click', function() {
   title.innerText = 'Guess The Number!'
   ans.innerText = 'Start Guessing...'

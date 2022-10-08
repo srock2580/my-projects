@@ -6,4 +6,4 @@ setInterval(() => {
   document.querySelector('.hour').innerText = hour
   document.querySelector('.minute').innerText = minute
   document.querySelector('.second').innerText = second
-}, 100);
+}, 1000);
