@@ -16,16 +16,18 @@ function Todo() {
   };
 
   const statusUpdateFunction = (id) => {
-    const x = todo.map(ele => id === ele.id ? {...ele, status: !ele.status} : ele)
+    const x = todo.map((ele) =>
+      id === ele.id ? { ...ele, status: !ele.status } : ele
+    );
 
-    setTodo(x)
-  }
+    setTodo(x);
+  };
 
   const deleteItemFunction = (id) => {
-    const x = todo.filter(ele => id !== ele.id ? ele : null)
+    const x = todo.filter((ele) => id !== ele.id && ele);
 
-    setTodo(x)
-  }
+    setTodo(x);
+  };
   return (
     <div>
       <TodoInput addItemFunction={addTodoItem}></TodoInput>
