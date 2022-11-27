@@ -1,6 +1,5 @@
 {
-  "homepage": ".",
-  "name": "todo-app",
+  "name": "time",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
